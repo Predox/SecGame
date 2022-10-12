@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Pixel";
+    src: url(fonts/Minecraft.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+input{
+    font-family: 'Pixel';
+    font-size: 30px;
+}
+
+body{
+    background: url('../imgs/Fundo.png') no-repeat right top fixed;
+    transition: 1s;
+}
+
+@media (max-width: 600px){
+    body{
+        transform: scale(0.5);
+        transition: 1s;
+    }
+}
