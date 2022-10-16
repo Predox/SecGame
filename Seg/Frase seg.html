@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="../SecGame 2.0/style.css">
     <title>SecGame</title>
     <style>
-        
-
         #txtCodigo{
             display: flex;
             justify-content: center;
@@ -39,7 +37,7 @@
 
         input{
             height: 4.5vh;
-            width: 50vh;
+            width: 60vh;
             font-size: 20px;
             color: black;
             background-color: #999999;
@@ -58,20 +56,19 @@
         }
 
         
-
     </style>
     <script defer>
         var pegar = "";
-        var grupo = "privacidade"
-        var Grupo = "Privacidade"
-        var GRUPO = "PRIVACIDADE"
+        var grupo = "Sistema seguro e aquele que nao esta inseguro"
+        var Grupo = "sistema seguro e aquele que nao esta inseguro"
+        var GRUPO = "SISTEMA SEGURO E AQUELE QUE NAO ESTA INSEGURO"
         var erro = "erro"
 
         function pegarChave(){
             pegar = document.getElementById('chave').value;
 
             if (pegar == grupo || pegar == Grupo || pegar == GRUPO){
-                window.location.href = "Frase priv.html"
+                window.location.href = "PC.html"
             }
         };
 
@@ -79,11 +76,11 @@
 </head>
 <body>
     <div id="txtCodigo">
-            <img src="../imgs/decifre.png" alt="Decifre o código">
+            <img src="../imgs/Desafio.png" alt="Decifre o código">
     </div>
 
     <div id="codigo">
-            <img src="../imgs/qsjwbdjebef - Priv.png" alt="código secreto">
+            <img src="../imgs/fraseSeg.png" alt="código secreto">
     </div>
 
     <div id="input">

@@ -3,5 +3,9 @@ function salvar(){
 }
 
 window.onload = function carregar(){
-    document.getElementById("result").value = localStorage.info + ', Voce esta no grupo:';
+    if(localStorage.info == ""){
+        document.getElementById("result").value = 'Parabens, Voce esta no grupo:'
+    }else{
+        document.getElementById("result").value = localStorage.info + ', Voce esta no grupo:';
+    }
 }
