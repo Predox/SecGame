@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
     <title>SecGame</title>
     <style>
+        @font-face {
+            font-family: "Pixel";
+            src: url(fonts/Minecraft.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        input{
+            font-family: 'Pixel';
+            font-size: 30px;
+        }
+
+        body{
+            background: url('../imgs/Fundo.png') no-repeat right top fixed;
+            transition: 1s;
+        }
+
+        @media (max-width: 600px){
+            body{
+                transform: scale(0.5);
+                transition: 1s;
+            }
+        }
+
         #SecGame{
             display: flex;
             justify-content: center;
