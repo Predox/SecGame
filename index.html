@@ -7,46 +7,30 @@
     <link rel="stylesheet" href="SecGame 2.0/style.css">
     <title>SecGame</title>
     <style>
-        #SecGame{
+        body{
+            background: url('imgs/Fundo.png') no-repeat right top fixed;
+        }
+
+        #container{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            height: 50vh;
+            height: 70vh;
+            
         }
 
-        #Start{
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            height: 45vh;
-        }
+  
 
-        #button{
-            cursor: pointer;
-        }
     </style>
-    <script>
-        function numeroAleatorio(a, b){
-            a = 1
-            b = 2
-            var p
-            p = Math.floor(Math.random() * ((b - a) + 1))
-            if(p == 0){
-                window.location.href = ("Seg/Nome.html")
-            }
-            else{
-                window.location.href = ("priv/Nome priv.html") 
-            }
-        }
-      
-    </script>
 </head>
 <body>
-    <div id="SecGame">
-        <img src="imgs/SecGame.png" alt="SecGame">
-    </div>
-    <div id="Start">
-            <img src="imgs/Start.png" alt="Start" width="300px" onclick="numeroAleatorio()" id="button">
-    </div>
+   <div id="container">
+        <a href="priv/startPriv.html">
+            <img src="imgs/1.png" alt="1" width="270px">
+        </a>
+        <a href="Seg/startSeg.html">
+            <img src="imgs/2.png" alt="2" width="270px">
+        </a>
+   </div>
 </body>
 </html>

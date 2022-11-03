@@ -49,7 +49,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            height: 40vh;
+            height: 20vh;
         }
 
         #inputConf{
@@ -57,6 +57,16 @@
             height: 80px;
         }
 
+        #Erro{
+            z-index: 2;
+            font-family: 'Pixel';
+            font-size: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            color: transparent;
+        }
         
 
     </style>
@@ -66,12 +76,22 @@
         var Grupo = "Privacidade"
         var GRUPO = "PRIVACIDADE"
         var erro = "erro"
+        
+        
 
         function pegarChave(){
             pegar = document.getElementById('chave').value;
 
             if (pegar == grupo || pegar == Grupo || pegar == GRUPO){
                 window.location.href = "Frase priv.html"
+            }
+            else{
+                function transparent(){
+                    document.getElementById("Erro").style.color = 'transparent';
+                }
+                document.getElementById("Erro").style.color = 'red';
+                setTimeout(transparent, 1000);
+                
             }
         };
 
@@ -90,7 +110,7 @@
         <input type="text" id="chave" placeholder=" > Insira o Chave">
     </div>
 
-    <p id="Erro"></p>
+    <p id="Erro">Erro!!!</p>
 
     <div id="conferir">
         <input type="image" src="../imgs/Conferir.png" id="inputConf" onclick="pegarChave()">
